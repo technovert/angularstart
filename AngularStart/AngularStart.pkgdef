@@ -1,0 +1,11 @@
+[$RootKey$\MVC4\ProjectTemplates\AngularStart]
+"Title"="AngularJS SPA"
+"Description"="ASP.Net MVC template to support AngularJS SPA applications."
+
+[$RootKey$\MVC4\ProjectTemplates\AngularStart\C#]
+
+[$RootKey$\MVC4\ProjectTemplates\AngularStart\C#\Razor]
+"Path"="CSharp\\Web"
+"SupportsHTML5"=dword:00000000
+"SupportsUnitTests"=dword:00000000
+"Template"="AngularStart.zip"
