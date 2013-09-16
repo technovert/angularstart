@@ -264,6 +264,7 @@
     <Content Include="Content\ng-grid.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="README.txt" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
