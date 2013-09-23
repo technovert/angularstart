@@ -172,7 +172,9 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="app.js">app.js</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="contact.js">contact.js</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="demo.js">demo.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="directives.js">demo.js</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="main.js">main.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="services.js">main.js</ProjectItem>
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.js">bootstrap.js</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.js">bootstrap.min.js</ProjectItem>

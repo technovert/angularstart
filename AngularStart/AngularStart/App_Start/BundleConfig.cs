@@ -27,6 +27,8 @@ namespace AngularStart
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                         "~/Scripts/app/app.js",
+                        "~/Scripts/app/services.js",
+                        "~/Scripts/app/directives.js",
                         "~/Scripts/app/main.js",
                         "~/Scripts/app/contact.js",
                         "~/Scripts/app/about.js",
