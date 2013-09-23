@@ -1,4 +1,4 @@
-ProjectTemplates\CSharp\Web\AngularStart.zip
+t\AngularStart.zip
 extension.vsixmanifest
 license.txt
 AngularStart.pkgdef

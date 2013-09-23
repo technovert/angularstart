@@ -7,24 +7,23 @@
     <Description xml:space="preserve">Standard MVC 4 template with integration with AngularJS.</Description>
     <Locale>1033</Locale>
     <License>license.txt</License>
+	<MoreInfoUrl>https://angularstart.codeplex.com</MoreInfoUrl>
     <SupportedProducts>
       <VisualStudio Version="10.0">
         <Edition>Ultimate</Edition>
         <Edition>Premium</Edition>
         <Edition>Pro</Edition>
-        <Edition>VWDExpress</Edition>
       </VisualStudio>
       <VisualStudio Version="11.0">
         <Edition>Ultimate</Edition>
         <Edition>Premium</Edition>
         <Edition>Pro</Edition>
-        <Edition>VWDExpress</Edition>
       </VisualStudio>
     </SupportedProducts>
     <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.5" />
   </Identifier>
   <Content>
     <VsPackage>AngularStart.pkgdef</VsPackage>
-    <ProjectTemplate>ProjectTemplates</ProjectTemplate>
+    <ProjectTemplate>t</ProjectTemplate>
   </Content>
 </Vsix>
