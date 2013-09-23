@@ -2,7 +2,7 @@
 cd %~dp0
 cd AngularStart
 REM create the project template zip
-..\tools\7za.exe a -tzip -mx9 ..\t\AngularStart.zip *
+..\tools\7za.exe a -tzip -mx9 ..\t\AngularStart.zip * -xr@..\excludeFromTemplate.txt
 pushd %~dp0
 REM create the VSIX file based on the zip and manifest data
 tools\7za.exe a -tzip -mx9 AngularStart.vsix @vsixfiles.txt

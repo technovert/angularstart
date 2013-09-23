@@ -1,0 +1,5 @@
+bin\*
+obj\*
+AngularStart.vstemplate
+AngularStart.csproj.user
+AngularStart.csproj.vspscc
