@@ -3,16 +3,19 @@ appRoot.controller('DemoController', function ($scope, $location, $resource) {
 
     var userResource = $resource('/api/users', {}, { update: { method: 'PUT' } });
     $scope.usersList = [];
-
+    
     userResource.query(function (data) {
-        $scope.usersList.length = 0;
+        $scope.usersList = [];
         angular.forEach(data, function (userData) {
             $scope.usersList.push(userData);
-        })
+        });
     });
 
-
     $scope.selectedUsers = [];
+
+    $scope.$watchCollection('selectedUsers', function () {
+        $scope.selectedUser = angular.copy($scope.selectedUsers[0]);
+    });
 
     $scope.userGrid = {
         data: 'usersList',
@@ -29,8 +32,17 @@ appRoot.controller('DemoController', function ($scope, $location, $resource) {
 
     $scope.updateUser = function (user) {
         userResource.update(user, function (updatedUser) {
-            $scope.selectedUsers[0] = updatedUser;
-        })
+            $scope.selectedUsers[0].id = updatedUser.id;
+            $scope.selectedUsers[0].firstName = updatedUser.firstName;
+            $scope.selectedUsers[0].lastName = updatedUser.lastName;
+            $scope.selectedUsers[0].gender = updatedUser.gender;
+            $scope.selectedUsers[0].mobile = updatedUser.mobile;
+            $scope.selectedUsers[0].email = updatedUser.email;
+            $scope.selectedUsers[0].city = updatedUser.city;
+            $scope.selectedUsers[0].state = updatedUser.state;
+            $scope.selectedUsers[0].country = updatedUser.country;
+            $scope.selectedUsers[0].zip = updatedUser.zip;
+        });
     };
 
     $scope.countryList = [
@@ -47,7 +59,7 @@ appRoot.controller('DemoController', function ($scope, $location, $resource) {
     $scope.clearCityAndZip = function () {
         $scope.selectedUsers[0].city = null;
         $scope.selectedUsers[0].zip = "";
-    }
+    };
 
     $scope.$watch('selectedUsers[0].state', function (selectedStateId) {
         if (selectedStateId) {
@@ -55,7 +67,7 @@ appRoot.controller('DemoController', function ($scope, $location, $resource) {
                 if (selectedStateId == state.id) {
                     $scope.selectedState = state;
                 }
-            })
+            });
         }
     });
 
