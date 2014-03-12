@@ -261,7 +261,6 @@
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-cookies.min.js" />
-    <Content Include="Scripts\angular-csp.css" />
     <Content Include="Scripts\angular-loader.js" />
     <Content Include="Scripts\angular-loader.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
@@ -272,7 +271,6 @@
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular-sanitize.js" />
     <Content Include="Scripts\angular-sanitize.min.js" />
-    <Content Include="Scripts\angular-scenario.js" />
     <Content Include="Scripts\angular-touch.js" />
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
@@ -350,7 +348,6 @@
     <Content Include="Views\Home\Main.cshtml" />
     <Content Include="Views\Home\angular.cshtml" />
     <Content Include="Views\Home\Demo.cshtml" />
-    <Content Include="Scripts\version.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
