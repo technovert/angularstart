@@ -1,4 +1,4 @@
-#AngularStart
+# AngularStart
 
 AngularStart is a Visual Studio 2010/2012/2013 project template for integrating ASP.Net MVC 4 with AngularJS framework. The project template stack contains ASP.Net MVC, WebAPI, Bootstrap 2.3.2 and AngularJS 1.2.14.
 
